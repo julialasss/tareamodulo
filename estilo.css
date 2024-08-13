@@ -1,0 +1,35 @@
+fieldset {
+    width: 1190px;
+    padding: 5px; /* Espacio interno */
+    border: 2px solid #000;    
+}
+
+legend {
+    font-size: 22px;
+    color: darkgreen;
+}
+
+.input-pequeno {
+    width: 40px;
+}
+
+.input-mediano {
+    width: 300px;
+}
+
+.input-grande {
+    width: 510px;
+}
+
+label {
+    font-size: 18px;
+}
+
+table {
+    font-size: 18px;
+}
+
+legend.rojito {
+    font-size: 22px;
+    color: darkred;
+}

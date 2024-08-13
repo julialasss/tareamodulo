@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <center>        
+    <img src="logofeo.png">
+    <label>________________________________________________________</label>
+    <img src="logofeo2.png">
+
+        <input type="file" accept="image/*" id="fileInput">
+
+        <h1>HOJA DE MATRICULA</h1>
+    
+        <input type="radio" value="N"> <span>NUEVO INGRESO</span>
+        <input type="radio" value="A"> <span>ANTIGUO INGRESO</span>
+        <br>
+        <br>
+        <label>Fecha de Inscripcion</label>
+        <input type="date" placeholder="dd/mm/aaa"> &emsp;
+        <label>Fecha de Matricula</label>
+        <input type="date" placeholder="dd/mm/aaa">
+        <br><br>
+        <form>
+            <fieldset>                
+                <legend><b>1. DATOS GENERALES</b></legend>
+                <Table border="1" width="76%">
+                    <tr>
+                        
+                        <td>&emsp;NIVEL EDUCATIVO EN EL QUE DESEA INGRESAR</td>
+                        <td>
+                            <input type="radio" value="N"> <span><b>Primer</b> año de bachillerato</span><br>
+                            <input type="radio" value="A"> <span><b>Segundo</b> año de bachillerato</span><br>
+                            <input type="radio" value="A"> <span><b>Tercer</b> año de bachillerato</span><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&emsp;OPCION:</td>
+                        <td>
+                            <input type="radio" value="General"> <span><b>General</b></span><br>
+                            <input type="radio" value="Contable"> <span>Técnico Vocacional <b>Administrativo Contable</b></span><br>
+                            <input type="radio" value="Desarrollo"> <span>Técnico Vocacional <b>Desarrollo de Software</b></span><br>
+                            <input type="radio" value="Salud"> <span>Técnico Vocacional <b>Atención Primaria en Salud</b></span><br>
+                        </td>
+                    </tr>                    
+                </Table>
+                <br>
+            </fieldset>
+            <br><br>
+
+            <fieldset>               
+                <legend><b>2. DATOS PERSONALES DE ESTUDIANTE</b></legend>                
+                <Table border="0" width="90%">
+                    <tr><td>
+                <label>2.1. NIE:</label>
+                <input type="text" placeholder="Escriba su NIE"> &emsp;
+                <label>Carné de minoridad N°:</label>
+                <input type="text" placeholder="Escriba su Carné">&emsp;
+            </td>
+            <td><br>
+                <label>DUI del Estudiante. N°:</label>
+                <input type="text" placeholder="Escriba su numero">
+                <br><br>
+            </td>
+            </tr>
+                    <tr>
+                        <td>2.2. Apellidos del estudiante</td>
+                        <td>Nombres del estudiante</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Primer Apellido"> &emsp;
+                            <input type="text" placeholder="Segundo Apellido"> &emsp;
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Primer Nombre"> &emsp;
+                            <input type="text" placeholder="Segundo Nombre"> &emsp;
+                        </td>                        
+                    </tr>                
+                    <tr>                        
+                        <td><br>
+                            2.3. Lugar y fecha de Nacimiento:
+                    <input type="text" placeholder="Municipio donde fue ausentado"> &emsp;
+                    <input type="date" placeholder="dd/mm/aaa">&emsp;
+                        </td>
+                        <td><br>
+                            Edad:
+                            <input type="number" class="input-pequeno">
+                                Años</td>
+                    </tr>                    
+                    <tr>
+                        <td><br>
+                            2.4. Genero: &emsp;
+                            <input type="radio" value="M"> <span>Masculino</span> &emsp;
+                            <input type="radio" value="F"> <span>Femenino</span><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2.5. Distancia en (km.) de la casa a la institución: &emsp;
+                            <input type="text"> &emsp;
+                        </td>
+                            <td><br>
+                                Estado Civil:
+                                <select name="estado_civil" id="">
+                                    <option value="0">-Seleccionar</option>
+                                    <option value="1">Soltero</option>
+                                    <option value="2">Casado</option>
+                                    <option value="3">Divorciado</option>
+                                    <option value="4">Viudo</option>
+                                </select><br>
+                            <br></td>
+                    </tr>                
+            </Table>
+            </fieldset>
+            <br><br>
+            <fieldset>                
+                <legend><b>3. DATOS DE RESIDENCIA</b></legend>
+                <br>
+                <Table border="0" width="90%">
+                    <tr><td>
+                <label>3.1. Dirección donde reside actualmente</label>&emsp; 
+                <input type="text" placeholder="Cantón / Caserío / Colonia"> &emsp; 
+                <input type="text" placeholder="Calle / Avenida"> <br><br>
+            </td></tr></Table>
+                <input type="text" placeholder="Pasaje / Block"> &emsp;
+                <input type="text" placeholder="Polígono"> &emsp;
+                <input type="text" placeholder="Casa N°"> &emsp;
+                <input type="text" placeholder=" Municipio"> &emsp;
+                <input type="text" placeholder="Departamento">
+                <Table border="0" width="90%">
+                    <tr>
+                        <td><br>
+                            3.2. Telefono Fijo de casa: 
+                            <input type="tel">
+                        </td>
+                        <td><br>
+                            3.3. Repite año:&emsp;
+                            <input type="radio" value="Si"> <span>Si</span> &emsp;
+                            <input type="radio" value="No"> <span>No</span> 
+                        </td>                        
+                    </tr>                                        
+                    <tr>
+                        <td><br>
+                            3.4. En qué año curso su último grado de estudio: 
+                            <input type="text">
+                        </td>
+                        <td><br>
+                            3.5. Estudió Parvularia:&emsp;
+                            <input type="radio" value="Sidos"> <span>Si</span> &emsp;
+                            <input type="radio" value="Nodos"> <span>No</span>
+                        </td>                        
+                    </tr> 
+                    <tr>
+                        <td><br>
+                            3.6. Medio de transporte que utilizará de la casa hacia la institución: 
+                            <select name="transporte" id="">
+                                <option value="0">-Seleccionar</option>
+                                <option value="1">Propio</option>
+                                <option value="2">Familiar</option>
+                                <option value="3">Escolar</option>
+                                <option value="4">Público</option>
+                                <option value="5">Peatonal</option>
+                                <option value="6">Otros</option>
+                            </select>                                    
+                    </tr> 
+                    <tr>
+                        <td><br>
+                            3.7. El estudiante se trasladrá de la casa a la Institución de estudios: &emsp; 
+                            
+                        </td> 
+                            <td>
+                            <input type="radio" value="Sidos"> <span>Solo</span> &emsp;
+                            <input type="radio" value="Nodos"> <span>Lo vendrá a dejar y a traer el encargado</span>
+                        </td>                        
+                    </tr> 
+                            <br>
+                        </Table>   
+                        <br>
+                            <label>3.8. Nombre del Colegio, Centro o Institucion Educativa de Procedencia:</label>  &emsp; 
+                                <input type="text" class="input-grande">
+                                <br><br> 
+            </fieldset>
+            <br><br> 
+                        <fieldset>                
+                            <legend><b>4. DATOS SOBRE SITUACIÓN FAMILIAR </b></legend>
+                        
+                        <tr>
+                            <td>
+                            <label ><br>4.1. NÚMERO DE MIEMBROS QUE HABITAN LA CASA DONDE VIVE EL ESTUDIANTE</label> &emsp;
+                            <input type="number" class="input-pequeno">
+                    </td>
+                    </tr>
+                    <table border="0" width="90%">
+                    <tr>
+                        <td>&emsp; El estudiante trabaja: 
+                            <input type="radio" value="Sitres"> <span>Si</span> &emsp;
+                            <input type="radio" value="Notres"> <span>No</span> &emsp;
+                        </td><td>
+                            ¿Dónde? &emsp;
+                            <input type="text" class="input-mediano">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&emsp; El estudiante tiene hijos(as): 
+                            <input type="radio" value="Sicuatro"> <span>Si</span> &emsp;
+                            <input type="radio" value="Nocuatro"> <span>No</span> &emsp;
+                        </td><td>
+                            ¿Cuántos? &emsp;
+                            <input type="text" class="input-mediano">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <label><br> 4.2. EL ESTUDIANTE VIVE CON:</label> &emsp;
+                </td>
+                </tr>
+                <tr>
+                    <td>&emsp;
+                        <select name="vive_con" id="">
+                            <option value="0">-Seleccionar</option>
+                            <option value="1">Solo Madre</option>
+                            <option value="2">Solo Padre</option>
+                            <option value="3">Ambos</option>
+                        </select> 
+                    </td><td>
+                        <span>Otros(Especifique):</span> &emsp; <input type="text" class="input-mediano">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <label><br> 4.3. DE QUIÉN DEPENDE ECONOMICAMENTE EL ESTUDIANTE:</label>
+            </td>
+            </tr>
+            <tr>
+                <td> &emsp;
+                    <select name="pobre" id="">
+                        <option value="0">-Seleccionar</option>
+                        <option value="1">Solo Madre</option>
+                        <option value="2">Solo Padre</option>
+                        <option value="3">Ambos</option>
+                    </select> 
+                </td><td>
+                    <span>Otros(Especifique):</span> &emsp; <input type="text" class="input-mediano">
+                    <br><br></td>
+            </tr>
+                    </table>
+                    </fieldset>
+                    <br><br>
+                    <fieldset>                
+                        <legend><b>5. OTROS </b></legend>
+                        <table border="0" width="90%">
+                    <tr>
+                        <td>
+                        <label ><br>5.1. Correo de Google Classroom:</label> &emsp;
+                        <input type="email" class="input-mediano" placeholder="nombre@clases.edu.sv">
+                </td>
+                </tr><tr>
+                    <td><br> 5.2. Teléfono Celular del estudiante: &emsp;
+                        <input type="tel">
+                    </td>
+                </tr><tr>
+                    <td><br>5.3. ¡Ha recibido el estudiante computadora Laptop del Gobierno? (MINEDUCYT) &emsp;
+                        <input type="radio" value="Sii"> <span>Si</span> &emsp;
+                        <input type="radio" value="Noo"> <span>No</span> &emsp; <br>
+                        <label>Marca</label>
+                        <input type="text"> &emsp;
+                        <label>Serie:</label>
+                        <input type="text">
+                        <br><br>
+                    </td>
+                </tr>
+                </table>
+                </fieldset>
+
+                <br><br>
+                    <fieldset> 
+                        <br>               
+                        <legend><b>6. APELLIDOS Y NOMBRES DEL PADRE </b></legend>
+                        <table border="0" width="90%">
+                    <tr>
+                        <td>
+                        <input type="text" class="input-grande" placeholder="Primer Apellido / Segundo Apellido"> &emsp;
+                        <input type="text" class="input-grande" placeholder="Primer Nombre / Segundo Nombre">
+                </td>
+                </tr><tr>
+                    <td><br> Profesión u oficio: &emsp;
+                        <input type="text" class="input-grande"> &emsp;
+                        DUI: 
+                        <input type="text">
+                    </td>
+                </tr><tr>
+                    <td><br> Nombre de la empresa donde trabaja:
+                        <input type="text" class="input-mediano"> &emsp;
+                        Tel. celular: 
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td><br><select name="vive_en" id="">
+                        <option value="0">-Seleccionar</option>
+                        <option value="1">Vive en la misma casa con nosotros </option>
+                        <option value="2">Vive con otra familia</option>
+                        <option value="3">Está fuera del país</option>
+                        <option value="4">Ya Falleció</option>
+                    </select>
+                        <br><br>
+                    </td>
+                </tr>
+                </table>
+                </fieldset>
+                <br><br>
+                <fieldset> 
+                    <br>               
+                    <legend><b>7. APELLIDOS Y NOMBRES DE LA MADRE </b></legend>
+                    <table border="0" width="90%">
+                <tr>
+                    <td>
+                    <input type="text" class="input-grande" placeholder="Primer Apellido / Segundo Apellido"> &emsp;
+                    <input type="text" class="input-grande" placeholder="Primer Nombre / Segundo Nombre">
+            </td>
+            </tr><tr>
+                <td><br> Profesión u oficio: &emsp;
+                    <input type="text" class="input-grande"> &emsp;
+                    DUI: 
+                    <input type="text">
+                </td>
+            </tr><tr>
+                <td><br> Nombre de la empresa donde trabaja:
+                    <input type="text" class="input-mediano"> &emsp;
+                    Tel. celular: 
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td><br><select name="vive_en" id="">
+                    <option value="0">-Seleccionar</option>
+                    <option value="1">Vive en la misma casa con nosotros </option>
+                    <option value="2">Vive con otra familia</option>
+                    <option value="3">Está fuera del país</option>
+                    <option value="4">Ya Falleció</option>
+                </select>
+                    <br><br>
+                </td>
+            </tr>
+            </table>
+            </fieldset>
+            <br><br>
+            <fieldset> 
+                <br>               
+                <legend><b>8. APELLIDOS Y NOMBRES DEL RESPONSABLE PARA RETIRAR DOCUMENTACIÓN EXCLUSIVAMENTE. </b></legend>
+                <table border="0" width="90%">
+            <tr>
+                <td>
+                <input type="text" class="input-grande" placeholder="Primer Apellido / Segundo Apellido"> &emsp;
+                <input type="text" class="input-grande" placeholder="Primer Nombre / Segundo Nombre">
+        </td>
+        </tr><tr>
+            <td><br> Profesión u oficio: &emsp;
+                <input type="text" class="input-grande"> &emsp;
+                DUI: 
+                <input type="text">
+            </td>
+        </tr><tr>
+            <td><br> Nombre de la empresa donde trabaja:
+                <input type="text" class="input-mediano"> &emsp;
+                Tel. celular: 
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td><br><select name="vive_en" id="">
+                <option value="0">-Seleccionar</option>
+                <option value="1">Vive en la misma casa con nosotros </option>
+                <option value="2">Vive con otra familia</option>
+                <option value="3">Está fuera del país</option>
+                <option value="4">Ya Falleció</option>
+            </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><br>
+                PARENTESCO CON EL ESTUDIANTE DEL RESPONSABLE:
+                <input type="text" class="input-mediano">
+                <br><br>
+            </td>
+        </tr>
+        </table>
+        </fieldset>
+        <br><br>
+        <fieldset> 
+            <br>               
+            <legend><b>9. DATOS DE SALUD DEL (LA) ESTUDIANTE </b></legend>
+            <table border="0" width="90%">
+        <tr>
+            <td>
+                <label>9.1. Si el estudiante padece alguna enfermedad o alérgia escríbala:</label>
+            <input type="text" class="input-grande"> &emsp;
+    </td>
+    </tr><tr>
+        <td>
+            <label><br>9.2. Si el estudiante tiene Prescritos medicamentos de carácter permanente escríbalos:</label>
+        <input type="text" class="input-mediano"> &emsp;
+</td>
+</tr><tr>
+    <td>
+        <label><br>9.3. En caso de emergencia llamar a Nombre de: </label>
+    <input type="text" class="input-mediano"> &emsp;
+    <label>Telefono: </label>
+    <input type="text"> &emsp;
+    <br><br>
+</td>
+</tr>
+    </table>
+    </fieldset>
+    <br><br>
+    <label><b>Firmo conforme (padre o madre) y/o responsable de familia:</b></label>
+    <input type="text"> &emsp;
+    <label><b>Firma del estudiante:</b></label>
+    <input type="text">
+    <br><br>
+    <fieldset>
+        <legend class="rojito"><b>10. OBSERVACIONES DE ESTRICTO CUMPLIMIENTO PARA REGISTRO ACADÉMICO</b></legend>
+        <br><label>En caso que el estudiante se retire de la Institución, la documentación únicamente la podrá retirar, la 
+                persona que ha quedado asignada como responsable en la Hoja de Matrícula del año en curso; no se le 
+                podrá entregar ni al estudiante ni a ninguna otra persona más, aunque sea su padre o su madre.<br><br></label>
+    </fieldset>
+<br><br><br>
+        </form>
+    </center>
+</body>
+</html>

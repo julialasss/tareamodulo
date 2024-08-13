@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTRUCTURAS REPETITIVAS</title>
+</head>
+<body>
+        <h1>Imprimiento el contenido de un arreglo</h1>
+    <script>
+    var edades=[10, 18, 60, 27];
+    var suma=0, promedio=0;
+    var mayor=0, menor=0; 
+    let opciones;
+
+
+
+        //Imprimiendo menu de opciones
+        opciones=parseInt(prompt("Menu de opciones \n 1- Imprimir arreglo \n 2- Imprimir la edad promedio \n 3- Visualizar el conteo"));
+        while(opciones<1 || opciones>3)
+            {
+                opciones=parseInt(prompt("Menu de opciones \n 1- Imprimir arreglo \n 2- Imprimir la edad promedio \n 3- Visualizar el conteo"));
+            }
+
+            //Procesos
+            switch(opciones)
+            {
+                case 1:
+                {
+                //promedio=suma/edades.length;
+            // document.write("La edad promedio es ",promedio.toFixed(2));
+
+        document.write("Imprimiendo el contenido del arreglo ")
+
+        // manda a llamar las edades en orden el index++ es para mandar a llamar la variable una por una
+        for (let index = 0; index < edades.length; index++) {
+            
+            //para que c separen los numeros con un -
+            document.writeln(edades[index],"-");
+        }
+
+                break;
+                }
+
+
+                case 2:
+                {
+                    document.write("Utilizando acumuladores ");
+        for (let index = 0; index < edades.length; index++) {
+            //edades es una variable no un arreglo para eso c le agrego la posicion en este caso index
+            suma=suma+edades[index];  
+        }
+        promedio=suma/edades.length;
+        document.write("La edad promedio es ",promedio.toFixed(2));
+    
+        
+                break;
+                }
+            
+
+                case 3:
+                {
+                    document.write("Utilizando conteos<br>");
+                    //la variable index tiene que ser inicializada, comprovada, actualizada
+    for (let index = 0; index < edades.length; index++) {
+        if(edades[index]>=18)
+        {
+            mayor++;
+        }
+        else{
+            menor++
+        }
+    }
+    //fin for
+
+    document.write("La cantidades de edades menores a 18 son: ", menor, "<br>");
+    document.write("La cantidades de edades mayores a 18 son: ", mayor, "<br>");
+
+                break;
+                }
+                
+
+            }
+
+
+
+
+/*
+    document.write("Utilizando conteos<br>");
+    for (let index = 0; index < edades.length; index++) {
+        if(edades[index]>=18)
+        {
+            mayor++;
+        }
+        else{
+            menor++
+        }
+    }
+    //fin for
+
+    document.write("La cantidades de edades menores a 18 son: ", menor, "<br>");
+    document.write("La cantidades de edades mayores a 18 son: ", mayor, "<br>");
+*/
+
+
+        /*
+        document.write("Utilizando acumuladores ");
+        for (let index = 0; index < edades.length; index++) {
+            //edades es una variable no un arreglo para eso c le agrego la posicion en este caso index
+            suma=suma+edades[index];  
+            //esto c llama tablas de las iteraciones
+            /*=0+10;
+            =10+18
+            =28+60;
+            =88+27;
+
+        }*/
+
+
+
+        //.length para que devuelva el tamaño del arreglo
+        /*
+        promedio=suma/edades.length;
+        document.write("La edad promedio es ",promedio.toFixed(2));
+
+        */
+    /*
+    document.write("Imprimiendo el contenido del arreglo ")
+
+        // manda a llamar las edades en orden el index++ es para mandar a llamar la variable una por una
+        for (let index = 0; index < edades.length; index++) {
+            
+            //para que c separen los numeros con un -
+            document.writeln(edades[index],"-");
+        }
+    */
+
+    </script>
+</body>
+</html>
